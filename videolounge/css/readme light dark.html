@@ -1,0 +1,617 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>CSS3 Form Pack Documentation</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/prettify/prettify.css" type="text/css" media="screen, projection" />
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+		
+		table tbody tr:hover { background: #ddd; }
+		pre {
+			padding: 20px !important;
+			border: 1px solid #ccc !important;
+			background: #f6f6f7;
+		}
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;CSS3 Form Pack&rdquo; Documentation by &ldquo;Nilok Bose&rdquo; v1.0</h3>
+		
+		<hr>
+		
+		<h1 class="center">&ldquo;CSS3 Form Pack&rdquo;</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 20/10/2011<br>
+					By: Nilok Bose<br>
+					Email: <a href="mailto:cosmocoder@gmail.com">cosmocoder@gmail.com</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing my item. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="http://codecanyon.net/user/cosmocoder">here</a>. Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#intro">Introduction</a></li>
+			<li><a href="#search">Search Forms</a></li>
+			<li><a href="#login">Login Forms</a></li>
+			<li><a href="#contact">Contact Forms</a></li>
+			<li><a href="#general">General Forms</a></li>
+			<li><a href="#ieshadow">Instructions for IE</a></li>				
+			<li><a href="#validation">Form validation styles</a></li>				
+		</ol>
+		
+		<hr>
+		
+		<h3 id="intro"><strong>A) Introduction</strong> - <a href="#toc">top</a></h3>
+		
+		<p>CSS3 Form Pack features a large collection of form styles that are used regularly in websites. You get 66 Search Forms, 33 Login Forms, 
+			12 Contact Forms, and one General Form. Further all these forms are available in Dark and Light coloured versions, so you get a total of
+			224 form styles! The login, contact and general forms also have focus and error styles defined in the css.
+	    </p>
+	
+		<p>All these forms have been styled using CSS3, and no images except icons have been used. Also no javascript has been used except on older browsers like IE 8
+			to achieve some of the functionality that modern browsers can easily do. Whatever javascript has been used are present at the bottom of the demo html
+			files. There is only one external javascript file called <strong>placeholder.js</strong> which is used to produce the placeholder effect in older browsers.
+			It should be noted that all javascript has been written by utilizing the <a href="http://jquery.com/">jQuery</a> javascript library. All the various
+			form styles can be easily used by just inserting some class names to your form. The process of using the forms has been described in the sections below.
+		</p>
+		
+		<hr>
+		
+		
+		<h3 id="search"><strong>B) Search Forms</strong> - <a href="#toc">top</a></h3>
+
+		<p>There are two main types of Search Forms - a) with a Submit button, b) without a Submit button. The html code for the first variety is:</p>
+		
+<pre class="prettyprint lang-html">
+&lt;form action=&quot;&quot; class=&quot;search-form&quot;&gt;
+    &lt;input type=&quot;text&quot; name=&quot;search&quot; class=&quot;search-input&quot; placeholder=&quot;Search...&quot; /&gt;
+    &lt;input class=&quot;search-btn&quot; type=&quot;submit&quot; value=&quot;Go&quot; /&gt;       
+&lt;/form&gt;
+</pre>
+		
+		<p>Similarly the html code for the search form without a Submit button is:</p>
+		
+<pre class="prettyprint lang-html">
+&lt;form action=&quot;&quot; class=&quot;search-form&quot;&gt;
+    &lt;input type=&quot;text&quot; name=&quot;search&quot; class=&quot;search-input&quot; placeholder=&quot;Search...&quot; /&gt;
+&lt;/form&gt;
+</pre>
+		
+		<p>The rest is handled by css styling. For that some classes have to be applied to the search form. You can already see that the form has the class <strong>search-form</strong>.
+			This is essential for all the styles to take effect. We have two varieties of class names &ndash; those that change the shape of the form, and those that change
+			the colour of the submit button. We will now discuss all these classes.
+		</p>
+		
+		
+		<p>The search forms are either enclosed in a frame or they are open. If you want the first variety then add the class <strong>frame</strong>, and if you do not want a frame
+			then add the class <strong>noframe</strong>. All the other class names that can be applied to the search forms are given below.</p>
+		
+		<table>
+			<thead>
+				<tr>
+					<th>DESIGN STYLE</th>
+					<th>CLASS NAME</th>
+				</tr>
+			</thead>
+			
+			<tbody>
+				<tr>
+					<td>Large round corners</td>
+					<td>rlarge</td>
+				</tr>
+				
+				<tr>
+					<td>Small round corners</td>
+					<td>rsmall</td>
+				</tr>
+				
+				<tr>
+					<td>Submit button outside form field</td>
+					<td>rbtn</td>
+				</tr>
+				
+				<tr>
+					<td>Submit button inside form field</td>
+					<td>inbtn</td>
+				</tr>
+				
+				<tr>
+					<td>No Submit button</td>
+					<td>nobtn</td>
+				</tr>
+				
+				<tr>
+					<td>Dark Gray</td>
+					<td>dgray</td>
+				</tr>
+				
+				<tr>
+					<td>Light Gray</td>
+					<td>lgray</td>
+				</tr>
+				
+				<tr>
+					<td>Dark Blue</td>
+					<td>dblue</td>
+				</tr>
+				
+				<tr>
+					<td>Light Blue</td>
+					<td>lblue</td>
+				</tr>
+				
+				<tr>
+					<td>Dark Green</td>
+					<td>dgreen</td>
+				</tr>
+				
+				<tr>
+					<td>Light Green</td>
+					<td>lgreen</td>
+				</tr>
+				
+				<tr>
+					<td>Dark Purple</td>
+					<td>dpurple</td>
+				</tr>
+				
+				<tr>
+					<td>Light Purple</td>
+					<td>lpurple</td>
+				</tr>
+				
+				<tr>
+					<td>Dark Brown</td>
+					<td>dbrown</td>
+				</tr>
+				
+				<tr>
+					<td>Light Brown</td>
+					<td>lbrown</td>
+				</tr>
+			</tbody>
+		</table>
+		
+		<p>Note that the search forms by default have straight corners, you only need special classes if you want round corners. So if you want a search form 
+			that has a frame, has large rounded corners and the submit button is of light gray colour and is outside the search field, then you will apply
+			the class names to the form as shown below:
+		</p>
+		
+<pre class="prettyprint lang-html">
+&lt;form action=&quot;&quot; class=&quot;search-form frame rbtn rlarge lgray&quot;&gt;
+    &lt;input type=&quot;text&quot; name=&quot;search&quot; class=&quot;search-input&quot; placeholder=&quot;Search...&quot; /&gt;
+    &lt;input class=&quot;search-btn&quot; type=&quot;submit&quot; value=&quot;Go&quot; /&gt;       
+&lt;/form&gt;
+</pre>		
+		
+		
+		<hr>
+		
+		
+		<h3 id="login"><strong>C) Login Forms</strong> - <a href="#toc">top</a></h3>
+		
+		<p>Login forms have been been broadly divided into two categories &ndash; a) labels on top of form fields, b) labels as placeholders inside form fields.
+			The basic html structure for the login form where the labels are on top is:
+		 </p>
+		
+<pre class="prettyprint lang-html">
+&lt;form action=&quot;&quot; class=&quot;login-form&quot;&gt;
+    &lt;label for=&quot;username&quot;&gt;Username&lt;/label&gt;
+    &lt;input type=&quot;text&quot; name=&quot;username&quot; class=&quot;login-input&quot; required /&gt;
+    
+    &lt;label for=&quot;password&quot;&gt;Password&lt;/label&gt;
+    &lt;input type=&quot;password&quot; name=&quot;password&quot; class=&quot;login-input&quot; required /&gt;
+    
+    &lt;span class=&quot;forgot&quot;&gt;Forgot &lt;a href=&quot;#&quot;&gt;Username&lt;/a&gt; / &lt;a href=&quot;#&quot;&gt;Password&lt;/a&gt;&lt;/span&gt;
+    
+    &lt;input type=&quot;submit&quot; class=&quot;login-btn&quot; value=&quot;Login&quot; /&gt;
+&lt;/form&gt;
+</pre>
+		
+		<p>The html structure for login forms with placeholders is:</p>
+		
+<pre class="prettyprint lang-html">
+&lt;form action=&quot;&quot; class=&quot;login-form&quot;&gt;
+    &lt;input type=&quot;text&quot; name=&quot;username&quot; class=&quot;login-input&quot; placeholder=&quot;Username&quot; required /&gt;
+    
+    &lt;input type=&quot;password&quot; name=&quot;password&quot; class=&quot;login-input&quot; placeholder=&quot;Password&quot; required /&gt;
+    
+    &lt;span class=&quot;forgot&quot;&gt;Forgot &lt;a href=&quot;#&quot;&gt;Username&lt;/a&gt; / &lt;a href=&quot;#&quot;&gt;Password&lt;/a&gt;&lt;/span&gt;
+    
+    &lt;input type=&quot;submit&quot; class=&quot;login-btn&quot; value=&quot;Login&quot; /&gt;
+&lt;/form&gt;
+</pre>
+		
+		<p>As you may have noticed the login forms must have the class <strong>login-form</strong>. To achieve further styling a few more class names are 
+			available which are described below. 
+		</p>
+		
+		<table>
+			<thead>
+				<tr>
+					<th>DESIGN STYLE</th>
+					<th>CLASS NAME</th>
+				</tr>
+			</thead>
+			
+			<tbody>
+				<tr>
+					<td>Vertical dark gray gradient</td>
+					<td>vdgray</td>
+				</tr>
+				
+				<tr>
+					<td>Vertical light gray gradient</td>
+					<td>vlgray</td>
+				</tr>
+				
+				<tr>
+					<td>Vertical dark blue gradient</td>
+					<td>vdblue</td>
+				</tr>
+				
+				<tr>
+					<td>Vertical light blue gradient</td>
+					<td>vlblue</td>
+				</tr>
+				
+				<tr>
+					<td>Vertical dark green gradient</td>
+					<td>vdgreen</td>
+				</tr>
+				
+				<tr>
+					<td>Vertical light green gradient</td>
+					<td>vlgreen</td>
+				</tr>
+				
+				<tr>
+					<td>Vertical dark purple gradient</td>
+					<td>vdpurple</td>
+				</tr>
+				
+				<tr>
+					<td>Vertical light purple gradient</td>
+					<td>vlpurple</td>
+				</tr>
+				
+				<tr>
+					<td>Vertical dark brown gradient</td>
+					<td>vdbrown</td>
+				</tr>
+				
+				<tr>
+					<td>Vertical light brown gradient</td>
+					<td>vlbrown</td>
+				</tr>
+				
+				<tr>
+					<td>Horizontal dark gray gradient</td>
+					<td>hdgray</td>
+				</tr>
+				
+				<tr>
+					<td>Horizontal light gray gradient</td>
+					<td>hlgray</td>
+				</tr>
+				
+				<tr>
+					<td>Horizontal dark blue gradient</td>
+					<td>hdblue</td>
+				</tr>
+				
+				<tr>
+					<td>Horizontal light blue gradient</td>
+					<td>hlblue</td>
+				</tr>
+				
+				<tr>
+					<td>Horizontal dark green gradient</td>
+					<td>hdgreen</td>
+				</tr>
+				
+				<tr>
+					<td>Horizontal light green gradient</td>
+					<td>hlgreen</td>
+				</tr>
+				
+				<tr>
+					<td>Horizontal dark purple gradient</td>
+					<td>hdpurple</td>
+				</tr>
+				
+				<tr>
+					<td>Horizontal light purple gradient</td>
+					<td>hlpurple</td>
+				</tr>
+				
+				<tr>
+					<td>Horizontal dark brown gradient</td>
+					<td>hdbrown</td>
+				</tr>
+				
+				<tr>
+					<td>Horizontal light brown gradient</td>
+					<td>hlbrown</td>
+				</tr>
+				
+			</tbody>
+		</table>
+		
+		<p>If you want top/bottom bars on your login form, as shown in the demo, then the following html is to be used:</p>
+		
+<pre class="prettyprint lang-html">
+&lt;form action=&quot;&quot; class=&quot;login-form&quot;&gt;
+    &lt;h3 class=&quot;tbar&quot;&gt;Login to your app&lt;/h3&gt;
+
+    &lt;label for=&quot;username&quot;&gt;Username&lt;/label&gt;
+    &lt;input type=&quot;text&quot; name=&quot;username&quot; class=&quot;login-input&quot; required /&gt;
+
+    &lt;label for=&quot;password&quot;&gt;Password&lt;/label&gt;
+    &lt;input type=&quot;password&quot; name=&quot;password&quot; class=&quot;login-input&quot; required /&gt;
+
+    &lt;div class=&quot;bbar&quot;&gt;
+        &lt;span class=&quot;forgot&quot;&gt;Forgot &lt;a href=&quot;#&quot;&gt;Username&lt;/a&gt; / &lt;a href=&quot;#&quot;&gt;Password&lt;/a&gt;&lt;/span&gt;
+
+        &lt;input type=&quot;submit&quot; class=&quot;login-btn&quot; value=&quot;Login&quot; required /&gt;
+    &lt;/div&gt;
+&lt;/form&gt;
+</pre>
+		
+		<p>The top bar is used only for the title of the login form and it must have the class <strong>tbar</strong>. The bottom bar contains the password/username recovery
+			links and the submit button. The bottom bar must have the class <strong>bbar</strong>. To colour these login forms the following classes have to be used:
+		</p>
+		
+		<table>
+			<thead>
+				<tr>
+					<th>DESIGN STYLE</th>
+					<th>CLASS NAME</th>
+				</tr>
+			</thead>
+			
+			<tbody>				
+				<tr>
+					<td>Dark Gray</td>
+					<td>dgray</td>
+				</tr>
+				
+				<tr>
+					<td>Light Gray</td>
+					<td>lgray</td>
+				</tr>
+				
+				<tr>
+					<td>Dark Blue</td>
+					<td>dblue</td>
+				</tr>
+				
+				<tr>
+					<td>Light Blue</td>
+					<td>lblue</td>
+				</tr>
+				
+				<tr>
+					<td>Dark Green</td>
+					<td>dgreen</td>
+				</tr>
+				
+				<tr>
+					<td>Light Green</td>
+					<td>lgreen</td>
+				</tr>
+				
+				<tr>
+					<td>Dark Purple</td>
+					<td>dpurple</td>
+				</tr>
+				
+				<tr>
+					<td>Light Purple</td>
+					<td>lpurple</td>
+				</tr>
+				
+				<tr>
+					<td>Dark Brown</td>
+					<td>dbrown</td>
+				</tr>
+				
+				<tr>
+					<td>Light Brown</td>
+					<td>lbrown</td>
+				</tr>
+			</tbody>
+		</table>
+		
+		
+		<p>You also get a login form that looks like a 3d block, and another form that appears as a sleek bar. The html for these forms is similar to what has been 
+			shown above but you can study them in the demo html file. To have the first variety the form must have the class <strong>form3d</strong> and to have the 
+			second variety the form must have the class <strong>bar</strong>. These forms only come in one Light colour and one Dark colour variations.
+		</p>
+		
+		<hr>
+		
+		
+		<h3 id="contact"><strong>D) Contact Forms</strong> - <a href="#toc">top</a></h3>
+		
+		<p>There are 6 available styles of contact forms and each style can have field labels either on top of the form fields or inside the fields as placeholders.
+			The general html structure of a contact form with labels on top is:
+		</p>
+		
+<pre class="prettyprint lang-html">
+&lt;form action=&quot;&quot; class=&quot;contact-form&quot;&gt;
+    &lt;label for=&quot;name&quot;&gt;Name &lt;span&gt;(required)&lt;/span&gt;&lt;/label&gt;
+    &lt;input type=&quot;text&quot; name=&quot;name&quot; class=&quot;form-input&quot; required /&gt;
+
+    &lt;label for=&quot;email&quot;&gt;Email &lt;span&gt;(required)&lt;/span&gt;&lt;/label&gt;
+    &lt;input type=&quot;email&quot; name=&quot;email&quot; class=&quot;form-input&quot; required /&gt;
+
+    &lt;label for=&quot;subject&quot;&gt;Subject &lt;span&gt;(optional)&lt;/span&gt;&lt;/label&gt;
+    &lt;input type=&quot;text&quot; name=&quot;subject&quot; class=&quot;form-input&quot; /&gt;
+
+    &lt;label for=&quot;message&quot;&gt;Message &lt;span&gt;(required)&lt;/span&gt;&lt;/label&gt;
+    &lt;textarea name=&quot;message&quot; class=&quot;form-input&quot; required&gt;&lt;/textarea&gt;
+
+    &lt;input class=&quot;form-btn&quot; type=&quot;submit&quot; value=&quot;Send Message&quot; /&gt;       
+&lt;/form&gt;
+</pre>
+		
+		<p>Th html structure for a contact fom with labels as placeholders is:</p>
+		
+<pre class="prettyprint lang-html">
+&lt;form action=&quot;&quot; class=&quot;contact-form nolabel&quot;&gt;
+    &lt;input type=&quot;text&quot; name=&quot;name&quot; class=&quot;form-input&quot; placeholder=&quot;Name (required)&quot; required /&gt;
+
+    &lt;input type=&quot;email&quot; name=&quot;email&quot; class=&quot;form-input&quot; placeholder=&quot;Email (required)&quot; required /&gt;
+
+    &lt;input type=&quot;text&quot; name=&quot;subject&quot; class=&quot;form-input&quot; placeholder=&quot;Subject (optional)&quot; /&gt;
+
+    &lt;textarea name=&quot;message&quot; class=&quot;form-input&quot; placeholder=&quot;Message (required)&quot; required&gt;&lt;/textarea&gt;
+
+    &lt;input class=&quot;form-btn&quot; type=&quot;submit&quot; value=&quot;Send Message&quot; /&gt;       
+&lt;/form&gt;
+</pre>
+		
+		<p>The styles that are available can be implemented by using the following class names on the form: </p>
+		
+		<ul>
+			<li>frame</li>
+			<li>frame tbar</li>
+			<li>msgtop</li>
+			<li>form3d</li>
+			<li>envelope</li>
+		</ul>
+		
+		<p>The simple form style that is shown at the beginning in the demo does not need any special class. Also the form styles that are achieved by using
+			the class names <strong>msgtop</strong> and <strong>envelope</strong> have a slightly different html structure which you can study in the demo.
+		</p>
+		
+		<p>Please note that the javascript file <strong>placeholder.js</strong>, that provides the placeholder text effect in older browsers, is slightly
+			modified here to also take care of textareas. So don't mix up the <strong>placeholder.js</strong> file from the Contact From folder with those
+			present in other folders.
+		</p>
+		
+		<hr>
+		
+		
+		<h3 id="general"><strong>E) General Form</strong> - <a href="#toc">top</a></h3>
+		
+		<p>In the general form, styles for the following form elements have been provided:</p>
+		
+		<ul>
+			<li>Text box</li>
+			<li>Textarea</li>
+			<li>Checkbox</li>
+			<li>Radio button</li>
+			<li>Select box</li>
+		</ul>
+		
+		<p>You can study the html used by looking at the demo. It should be noted that the select box has been styled using only CSS. This obviously has limitations.
+			The styling of the select box (including dropdown) looks best in Firefox. If you want a complete change in design in all browsers then a javascript based 
+			solution has to be used. You are free to use any javascript solution of your choice and you can then apply the styles on the select box that have been 
+			provided in the css file.</p>
+		
+		<hr>
+		
+		<h3 id="ieshadow"><strong>F) Instructions for IE</strong> - <a href="#toc">top</a></h3>
+		
+		<p>IE9 supports more CSS3 features than its previous versions. So very few tricks/hacks are required for this browser. It however does not support CSS3 gradients.
+		   To make the forms look good in IE 8 and lower versions <a href="http://css3pie.com">CSS3 PIE</a> and <a href="http://jquery.com/">jQuery</a> based fixes have been used.
+           CSS3 PIE is also used to generate gradients in IE9. The scripts that have been included at the bottom of the html files, add a class to the <code>&lt;html&gt;</code>
+           element called <strong>ie</strong> when IE8 or lower versions are detected. This class allows us to target these bowsers specifically in the css. Only for the styling
+           of the select box in the general form we have to apply a separate class called <strong>ie9</strong> to target IE9. Besides CSS3 PIE we also have to include 
+           <a href="http://code.google.com/p/ie7-js/">Dean Edwards' IE9.js</a> in the <code>&lt;head&gt;</code> like this:
+		</p>
+		
+<pre class="prettyprint">
+&lt;!--[if lt IE 9]&gt;
+    &lt;script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"&gt;&lt;/script&gt;
+&lt;![endif]--&gt;
+</pre>
+
+		<p>IE9.js makes IE &lt; 9 more standards compliant and enables support for many modern CSS3 selectors. Please note that generally the url path of a htc file (CSS3 PIE)
+		   which is declared in the css file, is made relative to the html file, and not relative to the css file from where it is referenced. Dean Edwards' IE9.js corrects this 
+		   non-standard behaviour in IE, and hence you can declare the htc file path relative to the css file, just like background images. However IE9 still requires the htc file 
+		   path to be relative to the html file. Since in the demo all files, whether html or css are present together, this does not pose a problem. So whatever path is relative 
+		   to the css file is also relative to the html. But in your project you will most likely have the css file present in a separate folder, and also obviously there cannot be 
+		   two declarations for the path of the htc file. So in that case the best way would be to keep two copies of the CSS3 PIE htc file &ndash; one inside the css folder and 
+		   one at the same level as the html file. Therefore you can declare the htc file in the css as <code>behavior: url(PIE.htc);</code> and this path will be relative to the
+		   css file for IE &lt; 9 and relative to the html file for IE9, and hence all versions of IE will be able to load the htc file.
+		</p>
+		
+		<p>IE requires that HTC behaviors are served up with a content-type header of "text/x-component", otherwise it will simply ignore the behavior, IE9 being especially strict in 
+			this regard. Many web servers are preconfigured to serve the correct content-type, but others are not. If you have problems with the PIE behavior not being applied, check
+			your server configuration and if possible update it to use the correct content-type. For Apache, you can do this in a .htaccess file:
+		</p>
+		
+<pre class="prettyprint">
+AddType text/x-component .htc
+</pre>
+		
+		<p>You will also see in the demo that HTML5 Shiv is used. If you are using HTML5 in your pages then you may already have this included, but this file is not required for the
+		   styling of the forms, but has only been used in the demo because the demo uses modern HTML5 tags.
+		</p>		
+		
+		<hr>
+		
+		
+		<h3 id="validation"><strong>G) Form validation styles</strong> - <a href="#toc">top</a></h3>
+		
+		<p>Error styles have been provided for the forms when they fail validation. HTML5 now provides client side validation without the need of any javascript based method.
+			In order to style invalid form fields a new pseudo class name is available, and it is called <code>:invalid</code>. However there is a problem with this pseudo class, 
+			and that is that the browser applies this class to form fields on page load. So if for example you have a login form where both the username and password fields are 
+			required, then when the page loads the browser applies the class <code>:invalid</code> to these fields because these fields are empty (naturally) on page load. So if 
+			the <code>:invalid</code> pseudo class has been styled to produce a red glow then users will see a red glow when the page loads. This is against good user experience
+			and will mislead users. Only Firefox provides a solution for this in the form of a new pseudo class called <code>:-moz-ui-invalid</code>. This class is activated only 
+			when the browser validates the form on submit. Therefore this class provides a better user experience and behaves just like standard javascript based solutions. 
+			However no such class exists in other browsers. Therefore a class called <code>invalid</code> is provided in the css which you can apply using a javascript based 
+			validation method. To illustrate this the demo files use the new HTML5 event called <strong>oninvalid</strong> (which is fired when form validation fails) to apply the 
+			class <code>invalid</code> to the form fields. Please note that this HTML5 event works in only Firefox, Chrome and Opera (although this event has not been utilized in 
+			Firefox in the demo).
+
+			
+		</p>
+		
+		
+		<hr>
+		
+		<p>I hope that you like this item and it makes your web page more stunning. If you find any bugs then don't hesitate to let me know. Also if you want to see some
+		   new features in this item or have any ideas to make the overall item much better then you can send me the details. All future updates are of course free !
+		</p>
+		
+		<p>Once again, thank you so much for purchasing this item. As I said at the beginning, I'd be glad to help you if you have any questions relating to this item. No guarantees, but I'll do my best to assist. If you have a more general question relating to the items on CodeCanyon, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p> 
+		
+		<p class="append-bottom alt large"><strong>Nilok Bose</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+	
+	
+	<script type="text/javascript" src="assets/prettify/prettify.js"></script>
+	<script type="text/javascript">
+		prettyPrint();
+	</script>
+</body>
+</html>

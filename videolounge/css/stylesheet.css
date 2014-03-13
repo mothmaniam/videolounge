@@ -1,0 +1,1218 @@
+.tabs
+{
+    background-color: #E48383;
+    font-family: Calibri;
+    font-size: Small;
+}
+
+.single-line-panel
+{
+    display: inline-block;
+    float: inherit;
+    margin-top:0px;
+    margin-bottom:-10px;
+    font-size:12px;
+    font-family:Calibri;
+    color: #434E66;
+    margin-left:-10px;
+    margin-right:14px;
+}
+
+.compactListboxAppointments
+{
+    padding-left:0px;
+    margin-left:15px;
+    border-radius: 10px; /*To make the corners rounded in IE*/
+    -moz-border-radius: -10px;/*this is for mozilla*/
+    -webkit-border-radius: -10px; /*chrome and other browsers*/
+    font-family: Calibri;
+    font-size: Small;
+}
+
+.compactListbox5
+{
+    padding-left:10px;
+    /*margin-left:-30px;*/
+    border-radius: 10px; /*To make the corners rounded in IE*/
+    -moz-border-radius: -10px;/*this is for mozilla*/
+    -webkit-border-radius: -10px; /*chrome and other browsers*/
+    font-family: Calibri;
+    font-size: Small;
+    width:180px;
+}
+
+.compactListbox4
+{
+    padding-left:20px;
+    margin-left:-30px;
+    border-radius: 10px; /*To make the corners rounded in IE*/
+    -moz-border-radius: -10px;/*this is for mozilla*/
+    -webkit-border-radius: -10px; /*chrome and other browsers*/
+    font-family: Calibri;
+    font-size: Small;
+    width:180px;
+}
+
+.compactListbox3
+{
+    padding-left:20px;
+    margin-left:15px;
+    border-radius: 10px; /*To make the corners rounded in IE*/
+    -moz-border-radius: -10px;/*this is for mozilla*/
+    -webkit-border-radius: -10px; /*chrome and other browsers*/
+    font-family: Calibri;
+    font-size: Small;
+    width:180px;
+}
+
+.compactListboxDiv
+{
+    padding-left:20px;
+    margin-left:10px;
+    border-radius: 10px; /*To make the corners rounded in IE*/
+    -moz-border-radius: -10px;/*this is for mozilla*/
+    -webkit-border-radius: -10px; /*chrome and other browsers*/
+    font-family: Calibri;
+    font-size: Small;
+    width:180px;
+}
+
+.compactListbox2
+{
+    padding-left:20px;
+    margin-left:-30px;
+    border-radius: 10px; /*To make the corners rounded in IE*/
+    -moz-border-radius: -10px;/*this is for mozilla*/
+    -webkit-border-radius: -10px; /*chrome and other browsers*/
+    font-family: Calibri;
+    font-size: Small;
+    width:180px;
+}
+
+.compactListbox
+{
+    font-family: Calibri;
+    font-size: Small;
+    padding-left:20px;
+    margin-left:-30px;
+    font-family: Calibri;
+    font-size: Small;
+    width:180px;
+}
+
+.fancyGridLabel
+{
+    color: #434E66;
+    margin-left: -42px;
+    font-family: Calibri;
+    font-size: Small;
+}
+
+.fancyLabel8
+{
+    color: #434E66;
+    /*margin-left: 109px;*/
+    font-family: Calibri;
+    font-size: Small;
+    margin-top:30px;
+}
+
+.fancyLabel7
+{
+    color: #434E66;
+    /*margin-left:110px;*/
+    font-family: Calibri;
+    font-size: Small;
+}
+
+.fancyLabel6
+{
+    color: #434E66;
+    /*margin-left:30px;*/
+    font-family: Calibri;
+    font-size: Small;
+}
+
+.fancyLabel5
+{
+    color: #434E66;
+    /*margin-left: 50px;*/
+    font-family: Calibri;
+    font-size: Small;
+    margin-top:30px;
+}
+
+.fancyLabel4
+{
+    color: #434E66;
+    /*margin-left: 30px;*/
+    font-family: Calibri;
+    font-size: Small;
+    margin-top:30px;
+}
+
+.fancyLabel3
+{
+    color: #434E66;
+    /*margin-left: 130px;*/
+    font-family: Calibri;
+    font-size: Small;
+    margin-top:30px;
+}
+
+.fancyLabel2
+{
+    color: #434E66;
+    /*margin-left: 20px;*/
+    font-family: Calibri;
+    font-size: Small;
+    margin-top:30px;
+}
+
+.fancyLabel
+{
+    color: #434E66;
+    /*margin-left: auto;*/
+    font-family: Calibri;
+    font-size: Small;
+}
+
+.ddl3
+{
+    font-family: Calibri;
+    font-size: 11px;
+    margin-top:1px;
+    margin-left:-80px;
+}
+
+.ddl2
+{
+    font-family: Calibri;
+    font-size: 11px;
+    margin-top:1px;
+}
+
+.ddl
+{
+    font-family: Calibri;
+    font-size: 11px;
+}
+
+/* Some stylesheet reset */
+#cssmenu > ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+	line-height: 1;
+}
+
+/* The container */
+#cssmenu > ul {
+	display: block;
+	position: relative;
+	width: 150px;
+}
+
+	/* The list elements which contain the links */
+	#cssmenu > ul li {
+		display: block;
+		position: relative;
+		margin: 0;
+		padding: 0;
+		width: 150px;	
+	}
+
+		/* General link styling */
+		#cssmenu > ul li a {
+			/* Layout */
+			display: block;
+			position: relative;
+			margin: 0;
+			border-top: 1px dotted #fff;
+			border-bottom: 1px dotted #d9d9d9;
+			padding: 11px 20px;
+			width: 110px;
+
+			/* Typography */
+			font-family:  Helvetica, Arial, sans-serif;
+			color: #f06343;
+			text-decoration: none;
+			text-transform: uppercase;
+			text-shadow: 0 1px 0 #fff;
+			font-size: 13px;
+			font-weight: 300;
+
+			/* Background & effects */
+			background: #eaeaea;
+		}
+
+		/* Rounded corners for the first link of the menu/submenus */
+		#cssmenu > ul li:first-child>a {
+			border-top-left-radius: 4px;
+			border-top-right-radius: 4px;
+			border-top: 0;
+		}
+
+		/* Rounded corners for the last link of the menu/submenus */
+		#cssmenu > ul li:last-child>a {
+			border-bottom-left-radius: 4px;
+			border-bottom-right-radius: 4px;
+			border-bottom: 0;
+		}
+
+
+		/* The hover state of the menu/submenu links */
+		#cssmenu > ul li>a:hover, #cssmenu > ul li:hover>a {
+			color: #fff;
+			text-shadow: 0 1px 0 rgba(0, 0, 0, .2);
+			background: #f06343;
+			background: -webkit-linear-gradient(bottom, #f06343, #f27d63);
+			background: -ms-linear-gradient(bottom, #f06343, #f27d63); 
+			background: -moz-linear-gradient(bottom, #f06343, #f27d63);
+			background: -o-linear-gradient(bottom, #f06343, #f27d63);
+			border-color: transparent;
+		}
+
+		/* The arrow indicating a submenu */
+		#cssmenu > ul .has-sub>a::after {
+			content: '';
+			position: absolute;
+			top: 16px;
+			right: 10px;
+			width: 0px;
+			height: 0px;
+
+			/* Creating the arrow using borders */
+			border: 4px solid transparent;
+			border-left: 4px solid #e4433c; 
+		}
+
+		/* The same arrow, but with a darker color, to create the shadow effect */
+		#cssmenu > ul .has-sub>a::before {
+			content: '';
+			position: absolute;
+			top: 17px;
+			right: 10px;
+			width: 0px;
+			height: 0px;
+
+			/* Creating the arrow using borders */
+			border: 4px solid transparent;
+			border-left: 4px solid #fff;
+		}
+
+		/* Changing the color of the arrow on hover */
+		#cssmenu > ul li>a:hover::after, #cssmenu > ul li:hover>a::after {
+			border-left: 4px solid #fff;
+		}
+
+		#cssmenu > ul li>a:hover::before, #cssmenu > ul li:hover>a::before {
+			border-left: 4px solid rgba(0, 0, 0, .25);
+		}
+
+	
+		/* THE SUBMENUS */
+		#cssmenu > ul ul {
+			position: absolute;
+			left: 150px;
+			top: -9999px;
+			padding-left: 5px;
+			opacity: 0;
+			/* The fade effect, created using an opacity transition */
+			-webkit-transition: opacity .3s ease-in;
+			-moz-transition: opacity .3s ease-in;
+			-o-transition: opacity .3s ease-in;
+			-ms-transition: opacity .3s ease-in;
+		}
+
+		/* Showing the submenu when the user is hovering the parent link */
+		#cssmenu > ul li:hover>ul {
+			top: 0px;
+			opacity: 1;
+		}
+
+.menuHover:hover
+{
+	cursor: auto;
+}
+
+.buttonsmd
+{
+	font: normal 8pt verdana;
+	height: 21px;
+	padding-left: 0px;
+	padding-right: 0px;
+	border: none;
+	color: #515886;
+	background-color: #FFFFFF;
+	vertical-align: bottom;
+}
+
+.ModalPopupBG
+{
+    background-color: #666699;
+    filter: alpha(opacity=50);
+    opacity: 0.7;
+}
+
+.removeInputStyle
+{
+	border-style: none;
+	background-color: Transparent;
+	padding-top: 3px;
+}
+
+table.dialogsansborder
+{
+	color: #000000;
+	padding: 1px;
+	font: normal 8pt verdana;
+}
+
+body
+{
+	width: 1000px;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	background-image: "url('../images/logo.jpg')";
+}
+
+.ddlinkButton
+{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: xx-small;
+    background : transparent;
+    right:20;
+}
+.ddlinkButton:hover
+{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    color: #999999;
+    text-decoration: underline;
+}
+.modalBackground
+{
+	background-color:Gray;
+	filter:alpha(opacity=70);
+	opacity:0.7;
+}
+
+.form_text
+{
+    width: 150px;
+    height: 16px;
+    font-size: x-small;
+}
+
+.textbox
+{
+    margin: 3px 2px 2px 2px;
+    background-position: 0px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: x-small;
+    vertical-align: middle;
+    background-image: url('../images/tb_bg_grey.png');
+    width: 178px;
+    height: 28px;
+    border-style: none;
+    padding-left: 4px;
+    padding-top: 4px;
+    background-repeat: no-repeat;
+}
+
+.datatextbox
+{
+    margin: 3px 2px 2px 2px;
+    background-position: 0px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: x-small;
+    vertical-align: middle;
+    background-image: url('../images/datatextbox.png');
+    border-style: none;
+    padding-left: 2px;
+    padding-top: 2px;
+    background-repeat: no-repeat;
+}
+
+.dataform_text
+{
+    margin: 2px;
+    font-size: x-small;
+    background-position: 0px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    background-repeat: no-repeat;
+    border-style: none;
+    width: 240px;
+    height: 18px;
+    color: #808080;
+    background-color: transparent;
+}
+
+.widedatatextbox
+{
+    font-size: x-small;
+    vertical-align: middle;
+    background-image: url('../images/datatextbox_550px.png');
+    height: 30px;
+    padding-left: 2px;
+    padding-top: 2px;
+    background-repeat: no-repeat;
+ }
+
+.widedataform_text
+{
+    margin: 2px;
+    font-size: x-small;
+    background-position: 0px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    background-repeat: no-repeat;
+    border-style: none;
+    width:500px;
+    height: 18px;
+    color: #808080;
+    background-color: transparent;
+}
+
+.blueheader
+{
+    font-family: 'Arial Rounded MT Bold';
+    font-size: x-large;
+    color: #008000;
+    font-weight: bold;
+}
+
+.blueheadermedium
+{
+    font-family: 'Arial Rounded MT Bold';
+    font-size: large;
+    color: #999999;
+    font-weight: 700;
+}
+
+.silverheader_medium
+{
+    font-family: 'Arial Rounded MT Bold';
+    font-size: Medium;
+    color: #999999;
+}
+
+.silverheader_large
+{
+    font-family: 'Arial Rounded MT Bold';
+    font-size: x-large;
+    color: #999999;
+}
+
+.grey_text
+{
+    font-family: 'Verdana';
+    font-size: small;
+    color: #999999;
+    background: transparent;
+}
+
+.button
+{
+    background-position: 1px 1px;
+    font-family: 'verdana';
+    font-size: 11px;
+    font-weight: bold;
+    color: #ffffff;
+    background-image: url('../images/Button.png');
+    background-repeat: no-repeat;
+    border-style: none;
+    background-color: transparent;
+    margin-left: 0px;
+}
+
+.thin_line
+{
+border-top-style: solid;
+border-top-width: 1px;
+border-top-color: #006C00;
+}
+
+.table01_Border
+{
+    background-color: #FFFFFF;
+    font-family: verdana;
+    font-size: 11px;
+    background: transparent;
+    width: 550px;
+    color: #808080;
+    cursor:auto;
+}
+
+.table01
+{
+    border: 1px solid #D4D4D4;
+    background-color: #FFFFFF;
+    font-family: verdana;
+    font-size: 11px;
+    color: #808080;
+    text-align: left;
+    cursor: auto;
+    overflow: auto;
+}
+
+.table02
+{
+	margin-left: 55px;
+    border: 1px solid #D4D4D4;
+    font-family: verdana;
+    font-size: 10px;
+    text-align: left;
+    background-color: #F8F8F8;
+    color: #808080;
+    cursor:auto;
+    overflow:auto;
+    width:313px;
+}
+
+.table03
+{
+	margin-left: 25px;
+    border: 1px solid #D4D4D4;
+    font-family: verdana;
+    font-size: 10px;
+    text-align: left;
+    background-color: #F8F8F8;
+    color: #808080;
+    cursor:auto;
+    overflow:auto;
+}
+
+.blue
+{
+    font-family: Verdana;
+    font-size: 12px;
+    color: #000099;
+    text-decoration: none;
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+}
+
+.bluetext
+{
+    font-family: Arial Rounded MT Bold;
+    font-size: 12px;
+    color: #000066;
+    font-weight: bold;
+    text-align: left;
+}
+
+.smallgreentext
+{
+    font-family: Verdana;
+    font-size: 11px;
+    color: #008000;
+    font-weight: bold;
+}
+
+.Largebluetext
+{
+    font-family: Arial Rounded MT Bold;
+    font-size: 42px;
+    color: #0066CC;
+    font-weight: bold;
+}
+
+.Mediumbluetext
+{
+    font-family: Arial Rounded MT Bold;
+    font-size: 12px;
+    color: #0066CC;
+    font-weight: bold;
+}
+
+.smallsilvertext
+{
+    font-family: Verdana;
+    font-size: 10px;
+    color: #999999;
+    font-weight: 700;
+ }
+
+.redErrorText
+{
+    font-family: Verdana;
+    font-size:15px;
+    color:Red;
+    font-weight:Bold;
+}
+
+.plainsmallsilvertext
+{
+    font-family: Verdana;
+    font-size: 11px;
+    color: #999999;
+    border-style: none;
+    background:transparent;
+}
+
+#logo_head
+{
+    position: absolute;
+    top: 5px;
+    height: 20px;
+    left: 20px;
+    vertical-align: middle;
+    text-align: left;
+    color: #FFFFFF;
+    font-family: 'Revue BT';
+    font-size:30px;
+    overflow:auto;
+}
+
+#head_menu
+{
+    top: 0px;
+    height: 100%;
+    width: 975px;
+    margin-left:auto;
+    margin-right:auto;
+    vertical-align: middle;
+    background-repeat: repeat-x;
+    position: relative;
+    background-image: url('../images/head.png');
+    padding: 13px 10px 10px 10px;
+}
+
+.headmenu
+{
+    top: 10px;
+    height: 100%;
+    width: 995px;
+    vertical-align: middle;
+    background-repeat: repeat-x;
+    position: relative;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.head_menu_item
+{
+    padding: 10px;
+    font-family: 'Verdana';
+    font-size: small;
+    color: #F7F7F7;
+    background: transparent;
+}
+
+#content_border
+{
+    padding: 30px;
+    border: 1px solid #C0C0C0;
+    background-color: #F3F3F3;
+    border-radius: 5px;
+    background-repeat: repeat;
+    bottom: 5px;
+    top: 100px;
+}
+
+#contact_item
+{
+position: absolute;
+top: 10px;
+height: 30px;
+right:30px;
+width:100%;
+background-color: Transparent;
+}
+
+#container
+{
+    position: relative;
+    height:auto;
+    width:auto;
+    background-color:Red;
+}
+
+#footer
+{
+    bottom: 5px;
+    width: 900px;
+    height: 35px; /* Height of the footer */
+    text-align: center;
+    font-family: Calibri;
+    vertical-align: middle;
+    font-size: 12px;
+    color: #FFFFFF;
+    left: auto;
+    right: auto;
+    background-image: none;
+    background-color: #333333;
+}
+
+img:hover
+{
+opacity:1.0;
+filter:alpha(opacity=100); /* For IE8 and earlier */
+}
+
+.Grid_head
+{
+    border: 1px solid #006C00;
+    height: 20px; /*  background-color: transparent;*/
+    color: white;
+    font-size: 10px;
+    background-color: #006C00;
+}
+
+.Grid_head_large
+{
+    border: 1px solid #006C00;
+    background-position: 0px;
+    height: 20px;
+    background-image: url('../images/grid_head_large_puma.jpg');
+    background-repeat: repeat-x;
+    background-color: transparent;
+    color: white;
+     font-size: 10px;
+}
+
+.calendar
+{
+    border: 1px solid #008000;
+    background-image: url('../images/grid_head_puma.jpg');
+    background-repeat: repeat-x;
+    background-color: #FFFFFF;
+    color: #999999;
+    font-size: large;
+}
+
+.Grid_head_selected
+{
+    background-position: 0px;
+    height: 20px;
+    background-image: url('../images/grid_head_selected.jpg');
+    background-repeat: repeat-x;
+    top: 0px;
+    background-color: transparent;
+}
+
+.Head_Logo
+{
+    background-position: 0px -7px;
+    position: absolute;
+    width: 320px;
+    background-image: url('../images/puma-energy.png');
+    background-repeat: no-repeat;
+    height: 60px;
+    top: 35px;
+    left: 20px;
+}
+
+.no_border
+{
+ border:none;
+}
+
+.Menu_
+{
+    border-width: 1px;
+    border-color: silver silver #CCCCCC silver;
+    background-repeat: repeat-x;
+    color: #f7f7f7;
+    font-size: small;
+    font-family: verdana;
+    background-color: #006C00;
+    text-decoration: none;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+}
+
+.Menu_:hover
+{
+    background-color: #D70000;
+    cursor: auto;
+    color: #FFFFFF;
+}
+
+#bodycenter {
+    top:45px;
+    width:995px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:Black;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#pagehead
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    background-image: url('../images/head.png');
+  }
+
+.LoginPanel
+{
+	font-family: Arial;
+	font-size: 12px;
+	border: 1px solid #666666;
+	width: auto;
+	height: auto;
+	border-radius: 5px;
+	background-color: #fffacd;
+	background-repeat: repeat-x;
+}
+
+.closebutton
+{
+    width:5px;
+    height:5px;
+    font-family: Verdana;
+    color: #999999;
+    font-weight: 700;
+    cursor:auto;
+}
+
+.roundcornerpanel
+{
+    padding: 20px;
+    border: 1px solid #C0C0C0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #666666;
+}
+
+.roundcornerpanel1
+{
+    padding-left: 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.headfont
+{
+    font-family:SerpentineDBol;
+    font-size: large;
+    font-style: italic;
+    color: #FFFFFF;
+}
+
+.popuppanel
+{
+    padding: 20px;
+    border: 1px solid #C0C0C0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 640px;
+    background-color: #FFFFFF;
+}
+
+#wrap
+{
+    margin-top:0px;
+    margin-bottom:0px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#wrap img
+{
+    display:none;
+}
+
+#wrap .is-showing
+{
+    display:inline;
+}
+
+#darkImage
+{
+    margin-top:0px;
+    margin-bottom:0px;
+    margin-left:auto;
+    margin-right:auto;
+    overflow:hidden;
+}
+
+.info, .success, .warning, .error, .validation
+{
+    border:1px solid;
+    margin:10px 0px;
+    padding:15px 10px 15px 50px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    width:575px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.info
+{
+    color: #00529B;
+    background-color: #BDE5F8;
+    background-image: url('../images/knob info.png');
+    font-family:Verdana;
+    font-weight:bold;
+}
+
+.success
+{
+    color: #4f8A10;
+    background-color: #DFF2BF;
+    background-image: url('../images/Knob Valid Green.png');
+    font-family:Verdana;
+    font-weight:bold;
+}
+.warning
+{
+    color: #9F6000;
+    background-color: #FEEFB3;
+    background-image: url('../images/Knob Attention.png');
+    font-family:Verdana;
+    font-weight:bold;
+}
+.error
+{
+    color: #D8000C;
+    background-color: #FFBABA;
+    background-image: url('../images/Knob Cancel.png');
+    font-family:Verdana;
+    font-weight:bold;
+}
+
+.validation
+{
+    color: #D63301;
+    background-color: #FFCCBA;
+    background-image: url('../images/Knob Remove Red.png');
+    font-family:Verdana;
+    font-weight:bold;
+}
+
+#p1 span
+{
+	margin-left: -55px;
+	width: 80px;
+	display: block;
+	float: left;
+	font-size: 80%;
+	padding-top: 5px;
+}
+
+#wrapper
+{
+    margin-left: auto;
+    margin-right:auto;
+    width:900px;
+}
+
+#heading
+{
+    background-image: url('../images/SelectBanner2.jpg');
+    text-align: left;
+}
+
+/** Navigation **/
+#navigation {
+	
+	height: 47px;		
+	left: 0;
+	margin-left:auto;
+	margin-right:auto;
+}
+#navigation ul
+{
+    background: url('../images/MenuBackgroundHover.jpg') repeat-x;
+    display: inline-block;
+    height: 40px;
+    width: 860px;
+    list-style: none;
+    background-color: #FFFFFF;
+}
+#navigation li
+{
+    float: left;
+    font-size: 16px;
+    line-height: 40px;
+    margin: 0 5px;
+    text-align: center;
+    font-family: Arial;
+}
+#navigation li.first {
+	margin-left: 0;
+	
+}
+#navigation li.selected
+{
+    background-color: #b7c2c8;
+}
+#navigation a
+{
+    color: #FFFFFF;   
+    padding: 0 33px;
+    text-decoration: none;
+}
+#navigation a:hover
+{
+    color: #FFFFFF;
+    background-color: #CCCCCC;
+    height: 40px;
+    display: inline-block;
+    background-image: url('../images/MenuBackground.jpg');
+}
+
+#navigation a:active
+{
+    color: #209235;
+    
+}
+
+#footnote {
+	
+	border-bottom:1px solid #023d58;
+    border-left: 1px solid #023d58;
+    border-right: 1px solid #023d58;
+    padding: 20px;
+	
+}
+#footnote ul
+{ 
+    list-style-image: url('../images/iconlist.png'); }
+
+
+#footnote li
+{
+    
+    float: left;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: left;
+    font-family: Verdana; 
+}
+#footnote li.first {
+	margin-left: 0;
+	
+}
+
+#footnote a
+{
+    color: #FFFFFF;    
+    text-decoration: none;
+}
+
+#footnote a:active
+{
+    color: #209235;    
+}
+
+#footer a
+{
+    color: #CCCCCC;
+}
+
+#footer
+{
+    
+}
+
+#mainPanel
+{
+    padding: 20px;
+    border-bottom: 0px;
+    border-top: 1px solid #023d58;
+    border-left: 1px solid #023d58;
+    border-right: 1px solid #023d58;
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+}
+
+.smallRedText
+{
+    font-family: 'Calibri';
+    font-size: small;
+    color: Red;
+} 
+
+.wrapper
+{    
+    border-bottom: 0px;
+    border-top: 0px;
+    border-left: 1px solid #023d58;
+    border-right: 1px solid #023d58;
+}
+.leftCol
+{
+    width: 300px;
+    float: left;
+}
+
+.rightCol
+{
+    float: right;
+    width: 550px;
+    margin-left: 4px;
+}
+
+.trans
+{
+    background-image: url('../images/transparent.png');
+}
+
+#Ul1
+{
+    display:inline-block;
+    line-height: 40px;
+    margin-left:auto;
+	margin-right:auto;
+}
+
+#linksMain {
+	
+	height: 47px;		
+	left: 0;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.buttonLogin
+{
+    border-style: none;
+    border-color: inherit;
+    border-width: medium;
+    font: normal 8pt verdana;
+    height: 26px;
+    padding-left: 0px;
+    padding-right: 0px;
+    color: #E10000;
+    vertical-align: bottom;
+}
+
+#leftMenu
+{
+    float:left;
+    width: 15%;
+}
+
+#contentRight
+{
+    float:right;
+    width:85%;
+}

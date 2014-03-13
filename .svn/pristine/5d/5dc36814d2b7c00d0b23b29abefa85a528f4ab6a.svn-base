@@ -1,0 +1,47 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ViewCompanyNotes.aspx.cs" Inherits="videolounge.ViewCompanyNotes" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="css/stylesheet.css" rel="stylesheet" type="text/css" />
+    <link href="css/light/login-light.css" rel="stylesheet" type="text/css" />
+
+    <table style="margin-left:250px">
+        <tr>
+            <td>
+                <asp:Label ID="lblMessageHeader" runat="server" ForeColor="Red" Font-Bold="true"></asp:Label>
+            </td>
+        </tr>
+   </table>
+
+</head>
+<body>
+    <form id="frmNotes" runat="server" style="background-color: #E48383">
+        <table>
+            <tr>
+                <td>
+                    <asp:Label ID="lblNotes" runat="server" Text="Notes" CssClass="fancyLabel"></asp:Label>
+                </td>
+                <td>
+                    <asp:TextBox ID="txtNotes" runat="server" CssClass="fancyLabel" Width="600px" TextMode="MultiLine" Rows="20"></asp:TextBox>
+                </td>
+            </tr>
+        </table>
+
+        <div id="divShowNotes" runat="server" style="margin-left:200px;">
+            <table>
+                <tr>
+                    <td>
+                        <asp:Button ID="btnEdit" runat="server" Text="Save Changes" CssClass="silverButton" onclick="btnEdit_Click"/>
+                    </td>
+                    <td>
+                        <asp:Button ID="btnClose" runat="server" Text="Close" CssClass="silverButton" onclick="btnClose_Click"/>
+                    </td>
+                </tr>
+            </table>
+       </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,103 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="videolounge.Main" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head runat="server">
+
+<link href="css/stylesheet.css" rel="stylesheet" type="text/css" />
+<link href="css/stylesheet2.css" rel="stylesheet" type="text/css" />
+<link href="css/light/login-light.css" rel="stylesheet" type="text/css" />
+
+    <title></title>
+</head>
+
+        <asp:ContentPlaceHolder ID="head" runat="server">
+        </asp:ContentPlaceHolder>
+
+<body style="width:100%">
+
+    <form id="frmMainMaster" runat="server" style="background-color: #E48383">
+
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        <div id="leftMenu">
+            <div id='cssmenu'>
+                <ul>
+                    <li class='last'><a href='ViewCompany.aspx'><span>Client Contact Sheet</span></a></li>
+                    <%--<li class='active'><a href='index.html'><span>Home</span></a></li>--%>
+                    <%--<li class='has-sub'><a href='#'><span>Marketing Actions</span></a>--%>
+                        <ul>
+                            <li class='last'><a href='AddMA.aspx'><span>*** Add New ***</span></a></li>
+                            <li class='last'><a href='MAGraeme.aspx'><span>Graeme</span></a></li>
+                                <%--<ul>
+                                    <li><a href='#'><span>Sub Item</span></a></li>
+                                    <li class='last'><a href='#'><span>Sub Item</span></a></li>
+                                </ul>--%>
+                            <%--</li>--%>
+                            <li class='last'><a href='MAQuintin.aspx'><span>Quintin</span></a></li>
+                                <%--<ul>
+                                    <li><a href='#'><span>Sub Item</span></a></li>
+                                    <li class='last'><a href='#'><span>Sub Item</span></a></li>
+                                </ul>--%>
+                            <%--</li>--%>
+                            <li class='last'><a href='MADebbie.aspx'><span>Debbie</span></a></li>
+                        </ul>
+                    </li>
+                    <%--<li class='last'><a href='Pipeline.aspx'><span>Jobs in the Pipeline</span></a></li>--%>
+                    <%--<li class='last'><a href='Quotes.aspx'><span>Quotes</span></a></li>--%>
+                    
+                    <%--<li class='has-sub'><a href='#'><span>Debt Collection</span></a>--%>
+                    <ul>
+                            <li class='last'><a href='AddDebt.aspx'><span>Add Debt Collection</span></a></li>
+                            <li class='last'><a href='ViewDebt.aspx'><span>View Debt Collections</span></a></li>
+                        </ul>
+                    <li class='last'><a href='LiveJobs.aspx'><span>Live Jobs</span></a></li>
+                    <li class='last'><a href='DailyActions.aspx'><span>Daily Actions</span></a></li>
+                    <%--<li class='has-sub'><a href='#'><span>Appointments</span></a>--%>
+                    <li class='last'><a href='ViewAppointments.aspx'><span>All Appointments</span></a>
+                        <ul>
+                            <%--<li class='last'><a href='AddAppointment.aspx'><span>Add Appointment</span></a></li>
+                            <li class='last'><a href='EditAppointment.aspx'><span>Edit/Delete Appointment</span></a></li>--%>
+                            <%--<li class='last'><a href='ViewAppointments.aspx'><span>View Appointments</span></a></li>--%>
+                        </ul>
+                    <li class='last'><a href='Reports.aspx'><span>Reports</span></a>
+                    <li class='has-sub'><a href='#'><span>Setup</span></a>
+                        <ul>
+                            <li class='has-sub'><a href='#'><span>User Accounts</span></a>
+                                <ul>
+                                    <li><a href='AddUser.aspx'><span>Add User</span></a></li>
+                                    <li><a href='EditUser.aspx'><span>Edit User</span></a></li>
+                                </ul>
+                            </li>
+                            <li class='has-sub'><a href='#'><span>Company</span></a>
+                                <ul>
+                                   <li><a href='AddCompany.aspx'><span>Add Company</span></a></li>
+                                   <li><a href='ViewCompany.aspx'><span>View/Edit Company</span></a></li>
+                                </ul>
+                            </li>
+                            <li class='has-sub'><a href='#'><span>Country</span></a>
+                                <ul>
+                                   <li><a href='AddCountry.aspx'><span>Add Country</span></a></li>
+                                   <li><a href='EditCountry.aspx'><span>Edit Country</span></a></li>
+                                </ul>
+                            </li>
+                            <li class='last'><a href='AddIndustry.aspx'><span>Add Industry</span></a></li>
+                            <li class='last'><a href='AddAgency.aspx'><span>Add Agency</span></a></li>
+                            <li class='last'><a href='AddLocation.aspx'><span>Add Location</span></a></li>
+                        </ul>
+                </ul>
+            </div>
+            </div>
+        </asp:ContentPlaceHolder>
+        </div>
+        
+        <div id="contentRight">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+     
+        <br clear="all" />
+    </form>
+</body>
+</html>

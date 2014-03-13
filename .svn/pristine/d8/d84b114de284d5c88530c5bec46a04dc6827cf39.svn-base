@@ -1,0 +1,1025 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C32E275C-905A-4B78-A570-1343EA5083BB}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>videolounge</RootNamespace>
+    <AssemblyName>videolounge</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=4.1.7.607, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <HintPath>..\packages\AjaxControlToolkit.7.0607\lib\40\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\CrystalDecisions.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Web, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="HtmlAgilityPack, Version=1.4.0.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <HintPath>..\packages\AjaxControlToolkit.7.0607\lib\40\SanitizerProviders\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="SanitizerProviders, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AjaxControlToolkit.7.0607\lib\40\SanitizerProviders\SanitizerProviders.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Telerik.Web.UI, Version=2012.2.607.40, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AddAgency.aspx" />
+    <Content Include="AddCountry.aspx" />
+    <Content Include="AddCompany.aspx" />
+    <Content Include="AddIndustry.aspx" />
+    <Content Include="AddLocation.aspx" />
+    <Content Include="AddMa.aspx" />
+    <Content Include="AddUser.aspx" />
+    <Content Include="AddAppointment.aspx" />
+    <Content Include="bin\AjaxControlToolkit.dll" />
+    <Content Include="bin\AjaxControlToolkit.pdb" />
+    <Content Include="bin\ar\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\cs\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\de\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\es\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\fr\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\he\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\hi\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\it\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\ja\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\ko\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\LICENSE.txt" />
+    <Content Include="bin\Microsoft.WindowsAzure.Storage.dll" />
+    <Content Include="bin\Microsoft.WindowsAzure.Storage.xml" />
+    <Content Include="bin\nl\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\pt\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\ReadMe.html" />
+    <Content Include="bin\ru\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\SanitizerProviders\HtmlAgilityPack.dll" />
+    <Content Include="bin\SanitizerProviders\SanitizerProviders.dll" />
+    <Content Include="bin\Telerik.Web.UI.dll" />
+    <Content Include="bin\tr-TR\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\videolounge.dll" />
+    <Content Include="bin\videolounge.pdb" />
+    <Content Include="bin\zh-CHS\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\zh-CHT\AjaxControlToolkit.resources.dll" />
+    <Content Include="css\dark\key.png" />
+    <Content Include="css\dark\login-dark.css" />
+    <Content Include="css\dark\login-dark.html" />
+    <Content Include="css\dark\login.png" />
+    <Content Include="css\dark\PIE.htc" />
+    <Content Include="css\dark\placeholder.js" />
+    <Content Include="css\dark\reset.css" />
+    <Content Include="css\dark\user.png" />
+    <Content Include="css\light\key.png" />
+    <Content Include="css\light\login-light.css" />
+    <Content Include="css\light\login-light.html" />
+    <Content Include="css\light\login.png" />
+    <Content Include="css\light\PIE.htc" />
+    <Content Include="css\light\placeholder.js" />
+    <Content Include="css\light\reset.css" />
+    <Content Include="css\light\user.png" />
+    <Content Include="css\readme light dark.html" />
+    <Content Include="css\stylesheet.css" />
+    <Content Include="AddDebt.aspx" />
+    <Content Include="DailyActions.aspx" />
+    <Content Include="EditAppointment.aspx" />
+    <Content Include="EditCountry.aspx" />
+    <Content Include="LiveJobs.aspx" />
+    <Content Include="Reports.aspx" />
+    <Content Include="sortByChannel.aspx" />
+    <Content Include="sortByCompany.aspx" />
+    <Content Include="sortByCountry.aspx" />
+    <Content Include="sortByIndustry.aspx" />
+    <Content Include="sortByRegion.aspx" />
+    <Content Include="sortByService.aspx" />
+    <Content Include="ViewAllJobsInPipelineReport.aspx" />
+    <Content Include="ViewDebtCompletedReport.aspx" />
+    <Content Include="ViewDebtPaidReport.aspx" />
+    <Content Include="ViewDebtUnpaidReport.aspx" />
+    <Content Include="ViewDebtUnsuccessfulReport.aspx" />
+    <Content Include="ViewInactiveLeadsReport.aspx" />
+    <Content Include="ViewInactiveQuotesReport.aspx" />
+    <Content Include="ViewLeadsReport.aspx" />
+    <Content Include="ViewLiveJobsReport.aspx" />
+    <Content Include="scripts\jquery-1.3.2.min.js" />
+    <Content Include="scripts\jquery.blockUI.js" />
+    <Content Include="ViewAppointmentsReport.aspx" />
+    <Content Include="ViewCompany.aspx" />
+    <Content Include="EditUser.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="logo.png" />
+    <Content Include="MADebbie.aspx" />
+    <Content Include="MAGraeme.aspx" />
+    <Content Include="MAQuintin.aspx" />
+    <Content Include="obj\Debug\videolounge.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\videolounge.dll" />
+    <Content Include="obj\Debug\videolounge.pdb" />
+    <Content Include="Pipeline.aspx" />
+    <Content Include="popup-calendar.aspx" />
+    <Content Include="popup-calendar2.aspx" />
+    <Content Include="Quotes.aspx" />
+    <Content Include="css\stylesheet2.css" />
+    <Content Include="test.aspx" />
+    <Content Include="ViewAppointments.aspx" />
+    <Content Include="ViewCompanyContacts.aspx" />
+    <Content Include="ViewCompanyNotes.aspx" />
+    <Content Include="ViewDebt.aspx" />
+    <Content Include="ViewDebtReport.aspx" />
+    <Content Include="ViewJobsInPipelineReport.aspx" />
+    <Content Include="ViewQuotesReport.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddAgency.aspx.cs">
+      <DependentUpon>AddAgency.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddAgency.aspx.designer.cs">
+      <DependentUpon>AddAgency.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddCountry.aspx.cs">
+      <DependentUpon>AddCountry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddCountry.aspx.designer.cs">
+      <DependentUpon>AddCountry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddCompany.aspx.cs">
+      <DependentUpon>AddCompany.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddCompany.aspx.designer.cs">
+      <DependentUpon>AddCompany.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddIndustry.aspx.cs">
+      <DependentUpon>AddIndustry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddIndustry.aspx.designer.cs">
+      <DependentUpon>AddIndustry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddLocation.aspx.cs">
+      <DependentUpon>AddLocation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddLocation.aspx.designer.cs">
+      <DependentUpon>AddLocation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddMa.aspx.cs">
+      <DependentUpon>AddMa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddMa.aspx.designer.cs">
+      <DependentUpon>AddMa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddUser.aspx.cs">
+      <DependentUpon>AddUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddUser.aspx.designer.cs">
+      <DependentUpon>AddUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddAppointment.aspx.cs">
+      <DependentUpon>AddAppointment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddAppointment.aspx.designer.cs">
+      <DependentUpon>AddAppointment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DailyActions.aspx.cs">
+      <DependentUpon>DailyActions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DailyActions.aspx.designer.cs">
+      <DependentUpon>DailyActions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DB.cs" />
+    <Compile Include="AddDebt.aspx.cs">
+      <DependentUpon>AddDebt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddDebt.aspx.designer.cs">
+      <DependentUpon>AddDebt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dsDebt.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsDebt.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsDebtCompleted.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsDebtCompleted.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsDebtPaidUnpaid.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsDebtPaidUnpaid.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsInactiveLeads.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsInactiveLeads.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsJobsInPipeline.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsJobsInPipeline.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsJobsInPipelineAll.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsJobsInPipelineAll.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsLeads.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsLeads.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsLiveJobs.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsLiveJobs.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsQuotes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsQuotes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsSortByChannel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsSortByChannel.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsSortByCompany.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsSortByCompany.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsSortByCountry.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsSortByCountry.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsSortByIndustry.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsSortByIndustry.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsSortByRegion.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsSortByRegion.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsSortByService.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsSortByService.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsViewAppointments.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsViewAppointments.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EditAppointment.aspx.cs">
+      <DependentUpon>EditAppointment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditAppointment.aspx.designer.cs">
+      <DependentUpon>EditAppointment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditCountry.aspx.cs">
+      <DependentUpon>EditCountry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditCountry.aspx.designer.cs">
+      <DependentUpon>EditCountry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LiveJobs.aspx.cs">
+      <DependentUpon>LiveJobs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LiveJobs.aspx.designer.cs">
+      <DependentUpon>LiveJobs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports.aspx.cs">
+      <DependentUpon>Reports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports.aspx.designer.cs">
+      <DependentUpon>Reports.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="rptSortByChannel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptSortByChannel.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptSortByCompany.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptSortByCompany.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptSortByCountry.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptSortByCountry.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptSortByIndustry.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptSortByIndustry.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptSortByRegion.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptSortByRegion.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptSortByService.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptSortByService.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptViewAllJobsInPipeline.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptViewAllJobsInPipeline.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptViewDebtCompleted.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptViewDebtCompleted.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptViewDebtPaid.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptViewDebtPaid.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptViewDebtUnpaid.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptViewDebtUnpaid.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptViewDebtUnsuccessful.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptViewDebtUnsuccessful.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptViewInactiveLeads.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptViewInactiveLeads.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptViewInactiveQuotes.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptViewInactiveQuotes.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptViewLeads.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptViewLeads.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptViewLiveJobs.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptViewLiveJobs.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="sortByChannel.aspx.cs">
+      <DependentUpon>sortByChannel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sortByChannel.aspx.designer.cs">
+      <DependentUpon>sortByChannel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sortByCompany.aspx.cs">
+      <DependentUpon>sortByCompany.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sortByCompany.aspx.designer.cs">
+      <DependentUpon>sortByCompany.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sortByCountry.aspx.cs">
+      <DependentUpon>sortByCountry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sortByCountry.aspx.designer.cs">
+      <DependentUpon>sortByCountry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sortByIndustry.aspx.cs">
+      <DependentUpon>sortByIndustry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sortByIndustry.aspx.designer.cs">
+      <DependentUpon>sortByIndustry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sortByRegion.aspx.cs">
+      <DependentUpon>sortByRegion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sortByRegion.aspx.designer.cs">
+      <DependentUpon>sortByRegion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sortByService.aspx.cs">
+      <DependentUpon>sortByService.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sortByService.aspx.designer.cs">
+      <DependentUpon>sortByService.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewAllJobsInPipelineReport.aspx.cs">
+      <DependentUpon>ViewAllJobsInPipelineReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewAllJobsInPipelineReport.aspx.designer.cs">
+      <DependentUpon>ViewAllJobsInPipelineReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewDebtCompletedReport.aspx.cs">
+      <DependentUpon>ViewDebtCompletedReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewDebtCompletedReport.aspx.designer.cs">
+      <DependentUpon>ViewDebtCompletedReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewDebtPaidReport.aspx.cs">
+      <DependentUpon>ViewDebtPaidReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewDebtPaidReport.aspx.designer.cs">
+      <DependentUpon>ViewDebtPaidReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewDebtUnpaidReport.aspx.cs">
+      <DependentUpon>ViewDebtUnpaidReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewDebtUnpaidReport.aspx.designer.cs">
+      <DependentUpon>ViewDebtUnpaidReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewDebtUnsuccessfulReport.aspx.cs">
+      <DependentUpon>ViewDebtUnsuccessfulReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewDebtUnsuccessfulReport.aspx.designer.cs">
+      <DependentUpon>ViewDebtUnsuccessfulReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewInactiveLeadsReport.aspx.cs">
+      <DependentUpon>ViewInactiveLeadsReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewInactiveLeadsReport.aspx.designer.cs">
+      <DependentUpon>ViewInactiveLeadsReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewInactiveQuotesReport.aspx.cs">
+      <DependentUpon>ViewInactiveQuotesReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewInactiveQuotesReport.aspx.designer.cs">
+      <DependentUpon>ViewInactiveQuotesReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewLeadsReport.aspx.cs">
+      <DependentUpon>ViewLeadsReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewLeadsReport.aspx.designer.cs">
+      <DependentUpon>ViewLeadsReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewLiveJobsReport.aspx.cs">
+      <DependentUpon>ViewLiveJobsReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewLiveJobsReport.aspx.designer.cs">
+      <DependentUpon>ViewLiveJobsReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="rptViewAppointments.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptViewAppointments.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptViewDebt.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptViewDebt.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptViewJobsInPipeline.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptViewJobsInPipeline.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rptViewQuotes.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptViewQuotes.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ViewAppointmentsReport.aspx.cs">
+      <DependentUpon>ViewAppointmentsReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewAppointmentsReport.aspx.designer.cs">
+      <DependentUpon>ViewAppointmentsReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewCompany.aspx.cs">
+      <DependentUpon>ViewCompany.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewCompany.aspx.designer.cs">
+      <DependentUpon>ViewCompany.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditUser.aspx.cs">
+      <DependentUpon>EditUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditUser.aspx.designer.cs">
+      <DependentUpon>EditUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Encryption.cs" />
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MADebbie.aspx.cs">
+      <DependentUpon>MADebbie.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MADebbie.aspx.designer.cs">
+      <DependentUpon>MADebbie.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MAGraeme.aspx.cs">
+      <DependentUpon>MAGraeme.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MAGraeme.aspx.designer.cs">
+      <DependentUpon>MAGraeme.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main.Master.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main.Master.designer.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MAQuintin.aspx.cs">
+      <DependentUpon>MAQuintin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MAQuintin.aspx.designer.cs">
+      <DependentUpon>MAQuintin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pipeline.aspx.cs">
+      <DependentUpon>Pipeline.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pipeline.aspx.designer.cs">
+      <DependentUpon>Pipeline.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="popup-calendar.aspx.cs">
+      <DependentUpon>popup-calendar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="popup-calendar.aspx.designer.cs">
+      <DependentUpon>popup-calendar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="popup-calendar2.aspx.cs">
+      <DependentUpon>popup-calendar2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="popup-calendar2.aspx.designer.cs">
+      <DependentUpon>popup-calendar2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Quotes.aspx.cs">
+      <DependentUpon>Quotes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Quotes.aspx.designer.cs">
+      <DependentUpon>Quotes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="test.aspx.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="test.aspx.designer.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewAppointments.aspx.cs">
+      <DependentUpon>ViewAppointments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewAppointments.aspx.designer.cs">
+      <DependentUpon>ViewAppointments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewCompanyContacts.aspx.cs">
+      <DependentUpon>ViewCompanyContacts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewCompanyContacts.aspx.designer.cs">
+      <DependentUpon>ViewCompanyContacts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewCompanyNotes.aspx.cs">
+      <DependentUpon>ViewCompanyNotes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewCompanyNotes.aspx.designer.cs">
+      <DependentUpon>ViewCompanyNotes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewDebt.aspx.cs">
+      <DependentUpon>ViewDebt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewDebt.aspx.designer.cs">
+      <DependentUpon>ViewDebt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewDebtReport.aspx.cs">
+      <DependentUpon>ViewDebtReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewDebtReport.aspx.designer.cs">
+      <DependentUpon>ViewDebtReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewJobsInPipelineReport.aspx.cs">
+      <DependentUpon>ViewJobsInPipelineReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewJobsInPipelineReport.aspx.designer.cs">
+      <DependentUpon>ViewJobsInPipelineReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewQuotesReport.aspx.cs">
+      <DependentUpon>ViewQuotesReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewQuotesReport.aspx.designer.cs">
+      <DependentUpon>ViewQuotesReport.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Main.Master" />
+    <Content Include="bin\AjaxControlToolkitSampleSite.zip" />
+    <None Include="dsDebt.xsc">
+      <DependentUpon>dsDebt.xsd</DependentUpon>
+    </None>
+    <None Include="dsDebt.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsDebt.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsDebt.xss">
+      <DependentUpon>dsDebt.xsd</DependentUpon>
+    </None>
+    <None Include="dsDebtCompleted.xsc">
+      <DependentUpon>dsDebtCompleted.xsd</DependentUpon>
+    </None>
+    <None Include="dsDebtCompleted.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsDebtCompleted.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsDebtCompleted.xss">
+      <DependentUpon>dsDebtCompleted.xsd</DependentUpon>
+    </None>
+    <None Include="dsDebtPaidUnpaid.xsc">
+      <DependentUpon>dsDebtPaidUnpaid.xsd</DependentUpon>
+    </None>
+    <None Include="dsDebtPaidUnpaid.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsDebtPaidUnpaid.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsDebtPaidUnpaid.xss">
+      <DependentUpon>dsDebtPaidUnpaid.xsd</DependentUpon>
+    </None>
+    <None Include="dsInactiveLeads.xsc">
+      <DependentUpon>dsInactiveLeads.xsd</DependentUpon>
+    </None>
+    <None Include="dsInactiveLeads.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsInactiveLeads.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsInactiveLeads.xss">
+      <DependentUpon>dsInactiveLeads.xsd</DependentUpon>
+    </None>
+    <None Include="dsJobsInPipeline.xsc">
+      <DependentUpon>dsJobsInPipeline.xsd</DependentUpon>
+    </None>
+    <None Include="dsJobsInPipeline.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsJobsInPipeline.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsJobsInPipeline.xss">
+      <DependentUpon>dsJobsInPipeline.xsd</DependentUpon>
+    </None>
+    <None Include="dsJobsInPipelineAll.xsc">
+      <DependentUpon>dsJobsInPipelineAll.xsd</DependentUpon>
+    </None>
+    <None Include="dsJobsInPipelineAll.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsJobsInPipelineAll.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsJobsInPipelineAll.xss">
+      <DependentUpon>dsJobsInPipelineAll.xsd</DependentUpon>
+    </None>
+    <None Include="dsLeads.xsc">
+      <DependentUpon>dsLeads.xsd</DependentUpon>
+    </None>
+    <None Include="dsLeads.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsLeads.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsLeads.xss">
+      <DependentUpon>dsLeads.xsd</DependentUpon>
+    </None>
+    <None Include="dsLiveJobs.xsc">
+      <DependentUpon>dsLiveJobs.xsd</DependentUpon>
+    </None>
+    <None Include="dsLiveJobs.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsLiveJobs.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsLiveJobs.xss">
+      <DependentUpon>dsLiveJobs.xsd</DependentUpon>
+    </None>
+    <None Include="dsQuotes.xsc">
+      <DependentUpon>dsQuotes.xsd</DependentUpon>
+    </None>
+    <None Include="dsQuotes.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsQuotes.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsQuotes.xss">
+      <DependentUpon>dsQuotes.xsd</DependentUpon>
+    </None>
+    <None Include="dsSortByChannel.xsc">
+      <DependentUpon>dsSortByChannel.xsd</DependentUpon>
+    </None>
+    <None Include="dsSortByChannel.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsSortByChannel.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsSortByChannel.xss">
+      <DependentUpon>dsSortByChannel.xsd</DependentUpon>
+    </None>
+    <None Include="dsSortByCompany.xsc">
+      <DependentUpon>dsSortByCompany.xsd</DependentUpon>
+    </None>
+    <None Include="dsSortByCompany.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsSortByCompany.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsSortByCompany.xss">
+      <DependentUpon>dsSortByCompany.xsd</DependentUpon>
+    </None>
+    <None Include="dsSortByCountry.xsc">
+      <DependentUpon>dsSortByCountry.xsd</DependentUpon>
+    </None>
+    <None Include="dsSortByCountry.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsSortByCountry.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsSortByCountry.xss">
+      <DependentUpon>dsSortByCountry.xsd</DependentUpon>
+    </None>
+    <None Include="dsSortByIndustry.xsc">
+      <DependentUpon>dsSortByIndustry.xsd</DependentUpon>
+    </None>
+    <None Include="dsSortByIndustry.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsSortByIndustry.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsSortByIndustry.xss">
+      <DependentUpon>dsSortByIndustry.xsd</DependentUpon>
+    </None>
+    <None Include="dsSortByRegion.xsc">
+      <DependentUpon>dsSortByRegion.xsd</DependentUpon>
+    </None>
+    <None Include="dsSortByRegion.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsSortByRegion.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsSortByRegion.xss">
+      <DependentUpon>dsSortByRegion.xsd</DependentUpon>
+    </None>
+    <None Include="dsSortByService.xsc">
+      <DependentUpon>dsSortByService.xsd</DependentUpon>
+    </None>
+    <None Include="dsSortByService.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsSortByService.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsSortByService.xss">
+      <DependentUpon>dsSortByService.xsd</DependentUpon>
+    </None>
+    <None Include="dsViewAppointments.xsc">
+      <DependentUpon>dsViewAppointments.xsd</DependentUpon>
+    </None>
+    <None Include="dsViewAppointments.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsViewAppointments.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsViewAppointments.xss">
+      <DependentUpon>dsViewAppointments.xsd</DependentUpon>
+    </None>
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="rptSortByChannel.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptSortByChannel1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptSortByCompany.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptSortByCompany.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptSortByCountry.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptSortByCountry.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptSortByIndustry.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptSortByIndustry.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptSortByRegion.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptSortByRegion.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptSortByService.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptSortByService.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptViewAllJobsInPipeline.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptViewAllJobsInPipeline.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptViewAppointments.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptViewAppointments.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptViewDebt.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptViewDebt.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptViewDebtCompleted.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptViewDebtCompleted.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptViewDebtPaid.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptViewDebtPaid.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptViewDebtUnpaid.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptViewDebtUnpaid.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptViewDebtUnsuccessful.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptViewDebtUnsuccessful.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptViewInactiveLeads.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptViewInactiveLeads.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptViewInactiveQuotes.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptViewInactiveQuotes.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptViewJobsInPipeline.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptViewJobsInPipeline.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptViewLeads.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptViewLeads.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptViewLiveJobs.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptViewLiveJobs.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptViewQuotes.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptViewQuotes.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>13109</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
